@@ -15,18 +15,18 @@ class MainActivity : AppCompatActivity() {
     }
     fun Name(){
         var ContactList= listOf<contact>(
-            contact("sandra","070641515","sandra@gmail.com"),
-            contact("mutai","0706456101","mutai@gmail.com"),
-            contact("jackie","0756415101","jackie@gmail.com"),
-            contact("shaline","070641095101","shaline@gmail.com"),
-            contact("lidya","0756715101","lidya@gmail.com"),
-            contact("brian","0706415761","brian@gmail.com"),
-            contact("kevin" ,"0706935101","kevin@gmail.com"),
-            contact("allan","07876415101","allan@gmail.com"),
-            contact("ivon","0706826101","ivon@gmail.com")
+            contact("sandra","070641515","sandra@gmail.com","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dSL56cuk6q9T2n3CoKeFAt3Fc0UvPFXkJQ&usqp=CAU" ),
+            contact("mutai","0706456101","mutai@gmail.com", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dSL56cuk6q9T2n3CoKeFAt3Fc0UvPFXkJQ&usqp=CAU"),
+            contact("jackie","0756415101","jackie@gmail.com","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dSL56cuk6q9T2n3CoKeFAt3Fc0UvPFXkJQ&usqp=CAU",),
+            contact("shaline","070641095101","shaline@gmail.com","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dSL56cuk6q9T2n3CoKeFAt3Fc0UvPFXkJQ&usqp=CAU"),
+            contact("lidya","0756715101","lidya@gmail.com","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dSL56cuk6q9T2n3CoKeFAt3Fc0UvPFXkJQ&usqp=CAU"),
+            contact("brian","0706415761","brian@gmail.com","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dSL56cuk6q9T2n3CoKeFAt3Fc0UvPFXkJQ&usqp=CAU"),
+            contact("kevin" ,"0706935101","kevin@gmail.com","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dSL56cuk6q9T2n3CoKeFAt3Fc0UvPFXkJQ&usqp=CAU"),
+            contact("allan","07876415101","allan@gmail.com","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dSL56cuk6q9T2n3CoKeFAt3Fc0UvPFXkJQ&usqp=CAU"),
+            contact("ivon","0706826101","ivon@gmail.com","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dSL56cuk6q9T2n3CoKeFAt3Fc0UvPFXkJQ&usqp=CAU")
         )
         rvContact=findViewById(R.id.rvContact)
-        var contactAdapter=cantactRecycleview(ContactList)
+        var contactAdapter=contactAdapter(ContactList,baseContext)
         rvContact.layoutManager=LinearLayoutManager(baseContext)
         rvContact.adapter=contactAdapter
     }
